@@ -1,13 +1,12 @@
-import {Video,Thumb} from './components/Video'
+import Video from "./components/Video";
 
 function App() {
-  return (<>
-    <div>
-      hello
-    </div>
-    <Video></Video>
-    <Thumb></Thumb>
-  </>)
+  return (
+    <>
+      <div>hello</div>
+      <Video></Video>
+    </>
+  );
 }
 
 export default App;
