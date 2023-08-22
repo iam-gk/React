@@ -1,4 +1,4 @@
-import Video from './components/Video'
+import {Video,Thumb} from './components/Video'
 
 function App() {
   return (<>
@@ -6,6 +6,7 @@ function App() {
       hello
     </div>
     <Video></Video>
+    <Thumb></Thumb>
   </>)
 }
 

@@ -10,4 +10,15 @@ function Video() {
     )
 }
 
-export default Video;
+function Thumb() {
+    return (
+        <>
+            <div>
+                Thumb
+            </div>
+
+        </>
+
+    )
+}
+export {Video,Thumb} ;
