@@ -4,7 +4,9 @@ function App() {
   return (
     <>
       <div>hello</div>
-      <Video></Video>
+      <Video title="React JS tutorial"></Video>
+      <Video title="Node Js tutoriail"></Video>
+      {/* Here, we have send title props to Video component. */}
     </>
   );
 }

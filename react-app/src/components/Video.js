@@ -1,7 +1,7 @@
 import "./Video.css";
-function Video() {
+
+function Video(props) {
   console.log("v", Video);
-  let topic = "React Js";
   let bg = "dark";
   return (
     <>
@@ -13,7 +13,8 @@ function Video() {
         />
       </div>
       <div className={bg} style={{ backgroundColor: "" }}>
-        {topic} Tutorials Components
+        {props.title} 
+        {/* props.title is written for calling title props. */}
       </div>
     </>
   );
