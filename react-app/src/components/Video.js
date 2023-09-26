@@ -1,6 +1,8 @@
 import "./Video.css";
 
-function Video(props) {
+// function Video(props) 
+function Video({title})
+{
   console.log("v", Video);
   let bg = "dark";
   return (
@@ -13,7 +15,8 @@ function Video(props) {
         />
       </div>
       <div className={bg} style={{ backgroundColor: "" }}>
-        {props.title} 
+        {/* {props.title}  */}
+        {title}
         {/* props.title is written for calling title props. */}
       </div>
     </>
