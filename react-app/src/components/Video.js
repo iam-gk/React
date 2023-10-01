@@ -1,7 +1,11 @@
+import { useState } from "react";
 import "./Video.css";
 
 // function Video(props)
 function Video({ title, id, channel = "gaurav", views, time, verified ,children}) {
+  console.log('render Video');
+
+  
   // Here, we set a default value channel="gaurav". gaurav is default value.
   // let verified = true;
   // let channelJSX;

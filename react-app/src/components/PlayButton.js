@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import './PlayButton.css';
 function PlayButton({message,children,onPlay,onPause}) {
-    let playing = false;
+    console.log('render PlayButton');
+    const [playing,setPlaying] = useState(false);
     function handleClick(e) {
         // console.log(message)
         // onClick();
@@ -8,13 +10,13 @@ function PlayButton({message,children,onPlay,onPause}) {
         e.stopPropagation()
         if(playing) onPause()
         else onPlay();
-    playing = !playing;
+    setPlaying(!playing);
     }
     return (
         
         // <button onClick={()=>console.log('play')}>Play</button>
 
-        <button onClick={handleClick}>{children} : {playing ? '>':'||'}</button>
+        <button onClick={handleClick}>{children} : {playing ? '▶️':'⏸️'}</button>
 
     )
 }
